@@ -15,12 +15,13 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-
+Database mydata ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        mydata= new Database(this);
 
         ///////////layout
         final LinearLayout layout_1 =(LinearLayout)findViewById(R.id.layout_1);
